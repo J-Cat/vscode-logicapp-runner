@@ -7,6 +7,7 @@
     "name": "J-Cat",
     "url": "https://github.com/J-Cat"
   },
+  "publisher": "j-cat",
   "license": "CC-BY-NC-4.0",
   "repository": {
     "url": "https://github.com/J-Cat/vscode-logicapp-runner"
