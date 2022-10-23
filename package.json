@@ -1,8 +1,17 @@
 {
   "name": "vscode-logicapp-runner",
-  "displayName": "Logic App - Run Triggers",
+  "displayName": "Logic Apps - Run Triggers",
   "description": "Allows one to run Logic Appp triggers (both Recurrence and Request",
-  "version": "1.0.1",
+  "icon": "images/logicapp.png",
+  "keywords": [
+    "Logic App",
+    "Logic Apps",
+    "LogicApp",
+    "Trigger",
+    "Azure Logic App",
+    "Run Trigger"
+  ],
+  "version": "1.0.3",
   "author": {
     "name": "J-Cat",
     "url": "https://github.com/J-Cat"
@@ -16,7 +25,7 @@
     "vscode": "^1.72.0"
   },
   "categories": [
-    "Other"
+    "Azure"
   ],
   "activationEvents": [
     "onCommand:logicapp-runner.runTrigger"
