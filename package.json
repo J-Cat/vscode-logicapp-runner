@@ -9,7 +9,7 @@
   },
   "license": "CC-BY-NC-4.0",
   "repository": {
-    "url": ""
+    "url": "https://github.com/J-Cat/vscode-logicapp-runner"
   },
   "engines": {
     "vscode": "^1.72.0"
