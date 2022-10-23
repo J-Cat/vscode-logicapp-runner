@@ -72,6 +72,8 @@ const getCallbackPostSchema = async (key: string, workflow: WorkflowType, trigge
 
 const runRecurrenceTrigger = async (key: string, workflow: WorkflowType, trigger: WorkflowTrigger): Promise<void> => {
 	try {
+		vscode.window.showInformationMessage(`Logic App: Running tigger, ${trigger.name}, for workflow, ${workflow.name}`);
+
 		const response = await axios({
 			baseURL: vscode.workspace.getConfiguration('logicapp-runner').get('baseUrl'),
 			url: `/runtime/webhooks/workflow/api/management/workflows/${workflow.name}/triggers/${trigger.name}/run?code=${key}`,
@@ -107,6 +109,8 @@ const runRequestTrigger = async (key: string, workflow: WorkflowType, trigger: W
 				return;
 			}
 		}
+
+		vscode.window.showInformationMessage(`Logic App: Running tigger, ${trigger.name}, for workflow, ${workflow.name}`);
 
 		const response = await axios({
 			baseURL: '',
@@ -195,8 +199,6 @@ export const activate = (context: vscode.ExtensionContext) => {
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
 	let disposable = vscode.commands.registerCommand('logicapp-runner.runTrigger', async () => {
-		vscode.window.showInformationMessage('LogicApp - run trigger started');
-
 		try {
 			const key = await getMasterKey();
 			await selectWorkflow(key);	

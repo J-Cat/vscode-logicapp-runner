@@ -2,6 +2,7 @@
   "name": "vscode-logicapp-runner",
   "displayName": "Logic Apps - Run Triggers",
   "description": "Allows one to run Logic Appp triggers (both Recurrence and Request",
+  "version": "1.0.4",
   "icon": "images/logicapp.png",
   "keywords": [
     "Logic App",
@@ -11,7 +12,6 @@
     "Azure Logic App",
     "Run Trigger"
   ],
-  "version": "1.0.3",
   "author": {
     "name": "J-Cat",
     "url": "https://github.com/J-Cat"
@@ -37,7 +37,7 @@
       "properties": {
         "logicapp-runner.baseUrl": {
           "type": "string",
-          "description": "Base URL for your Azure Functions (default of http://localhost:7071",
+          "description": "Base URL for your Azure Functions (default of http://localhost:7071)",
           "default": "http://localhost:7071"
         }
       }
