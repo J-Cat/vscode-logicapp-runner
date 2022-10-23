@@ -2,7 +2,7 @@
   "name": "vscode-logicapp-runner",
   "displayName": "Logic App - Run Triggers",
   "description": "Allows one to run Logic Appp triggers (both Recurrence and Request",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "J-Cat",
     "url": "https://github.com/J-Cat"
