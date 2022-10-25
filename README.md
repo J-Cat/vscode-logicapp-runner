@@ -5,7 +5,13 @@ The "logicapp-runner" allows you to run your Logic App Standard Single Tenant tr
 
 ## Features
 
-This extension adds a "Logic App: Run Trigger" option to the Command Pallette:
+This extension adds two commands to the Command Pallette:
+
+1. "Logic App: Run Trigger"
+2. "Logic App: Cancel Workflow Run"
+
+
+### ***Logic App: Run Trigger***
 
 ![Run Command](images/run-command.png)
 
@@ -16,6 +22,19 @@ When you run the command, it will ask you to select from a list of workflows to 
 If the workflow selected has a trigger that requires a POST body, you will be promted to enter it:
 
 ![Enter POST Body](images/post-json.png)
+
+
+### ***Logic App: Cancel Workflow Run***
+
+![Run Command](images/cancel-select-command.png)
+
+When you run the command, it will ask you to select from a list of workflows to run:
+
+![Select Workflow](images/select-workflow.png)
+
+After selecting the workflow, it will ask you to select from the list of runs:
+
+![Select Workflow Run](images/cancel-select-run.png)
 
 
 ## Requirements
